@@ -1,16 +1,16 @@
 # HY-18-GY-MCU90640-thermal-imager-MLX90640-USB
 
-Script for reading the output of Thermal Imager like HY-18 (GY-MCU90640) based on sensor MLX90640 on a computer with USB and Python 3.0.
+Script for reading the output of Thermal Imager like HY-18 (GY-MCU90640) on a computer with USB and Python 3.6, using another camera supported by Python.
 
-This work is based on script of vvkuryshev (https://github.com/vvkuryshev/GY-MCU90640-RPI-Python/) and cide from https://www.pyimagesearch.com/2014/08/25/4-point-opencv-getperspective-transform-example/  for Thermal Imager like this : https://es.aliexpress.com/item/33038772404.html?spm=a2g0o.store_home.productList_328396795.subject_0&spm=a2g0o.store_home.singleImageText_669346773.0
+This work is based on script of vvkuryshev (https://github.com/vvkuryshev/GY-MCU90640-RPI-Python/) and some code from https://www.pyimagesearch.com/2014/08/25/4-point-opencv-getperspective-transform-example/  for a Thermal Imager based on MLX90640  who contains a microcontroller STM32F103, like this : https://es.aliexpress.com/item/33038772404.html?spm=a2g0o.store_home.productList_328396795.subject_0&spm=a2g0o.store_home.singleImageText_669346773.0
 
-The Thermal Imager only needs to connect directly to USB, and a webcam recognized by Python 3.6. This script imports libraries like OpenCV for image transformations.
+The Thermal Imager only needs to connect directly to USB, and a webcam recognized by Python 3.6. This script imports libraries like OpenCV for image transformations. This Thermal Imager connects to USB acting as a serial controller (CH341 UART) sending serial data from MLX90640 (but not receiving, so it's impossible to send commands to the module) at 115200 bauds.
 
-![Alt text](https://github.com/krlsndrs/HY-18-GY-MCU90640-thermal-imager-MLX90640-USB/blob/master/CapturaImagen.jpeg?raw=true "Captura de la conexión")
+![Conection of module](https://github.com/krlsndrs/HY-18-GY-MCU90640-thermal-imager-MLX90640-USB/blob/master/CapturaImagen.jpeg?raw=true "Captura de la conexión")
 
 I apologize for the quality of the script, this is my very first attempt to program in Python.
 
-![Alt text](https://github.com/krlsndrs/HY-18-GY-MCU90640-thermal-imager-MLX90640-USB/blob/master/pic_2020-03-02_19-37-11.jpg?raw=true "Captura de la conexión")
+![Example of capture](https://github.com/krlsndrs/HY-18-GY-MCU90640-thermal-imager-MLX90640-USB/blob/master/pic_2020-03-02_19-37-11.jpg?raw=true "Captura de la conexión")
 
 USAGE:
 
